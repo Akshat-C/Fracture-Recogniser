@@ -1,0 +1,51 @@
+<html>
+
+<head>
+
+<title>Fracture Recogniser</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+<script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js" target="_blank"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    
+<center>
+<div class="container">
+
+<h1 class="btn-primary">Face Recogniser</h1>
+<h3>This Model can Recognise Fractures in:</h3>
+<h3 class="alert alert-info">Arms and Legs</h3>
+<h3>It can also Recognise if There is no Fracture</h3>
+
+<div>
+<h4>Webcam View- </h4>
+<div id="camera"></div>
+</div>
+
+<div>
+<h4>Result- </h4>
+<div id="result"></div>
+</div>
+<br>
+<button class="btn btn-success" onclick="capture_img()">Capture Image</button>
+<button class="btn btn-info" onclick="recognise_img()">Identify Image</button>
+<h4>Result: </h4><span id="member_name"></span>
+<h4>Accuracy: </h4><span id="accuracy"></span>
+<br>
+<h4 id="fracture_info"></h4>
+
+</div>
+</center>
+
+<script src="main.js"></script>
+
+
+</body>
+
+</html>

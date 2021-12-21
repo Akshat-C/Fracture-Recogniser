@@ -1,0 +1,20 @@
+.alert {
+    width: 200px;
+    padding: 5px;
+}
+
+#camera, #result {
+    border: 2px dashed #00ADB5;
+    height: 220px;
+    width: 220px;
+}
+
+body {
+    background-color: #222831;
+    color: #EEEEEE;
+}
+
+h1 {
+    width: 350px;
+    padding: 5px;
+}
