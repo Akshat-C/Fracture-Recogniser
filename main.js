@@ -18,7 +18,9 @@ function capture_img()
 
     if (i >= 1)
     {
-        document.getElementById("fractured_info").innerHTML = " ";
+        document.getElementById("fracture_info").innerHTML = "";
+        document.getElementById("member_name").innerHTML = "";
+        document.getElementById("accuracy").innerHTML = "";
     }
     
 }
@@ -52,7 +54,7 @@ function gotResults(error, results)
 
     if (results[0].label == "Fracture")
     {
-        document.getElementById("fracture_info").innerHTML = "A fracture occurs when a bone is broken due to an accident or fall. Fractures can happen anywhere there are bones but mostly happen in the bones of the arms or legs. They can take a few weeks or months to heal depending on their severity";
+        document.getElementById("fracture_info").innerHTML = "A fracture occurs when a bone is broken due to an accident or fall. Fractures can happen anywhere there are bones but mostly happen in the bones of the arms or legs. They can take a few weeks or months to heal depending on their severity.";
         i++;
     }
 }
