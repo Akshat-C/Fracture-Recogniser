@@ -19,9 +19,8 @@
 <div class="container">
 
 <h1 class="btn-warning">Fracture Recogniser</h1>
-<h3>This Model can Recognise Fractures in:</h3>
-<h3 class="alert alert-danger">Arms and Legs</h3>
-<h4>It can also Recognise if There is no Fracture</h4>
+<h3>This Model can Recognise Different Types of Fractures Like: </h3>
+<h3 class="alert alert-danger">Spiral, Comminuted and Greenstick Fractures</h3>
 <br>
 
 <div>
@@ -36,8 +35,10 @@
 <br>
 <button class="btn btn-success" onclick="capture_img()">Capture Image</button>
 <button class="btn btn-info" onclick="recognise_img()">Identify Image</button>
-<h4>Result: </h4><span id="member_name"></span>
+<h4>Result: </h4><span id="fracture_name"></span>
 <h4>Accuracy: </h4><span id="accuracy"></span>
+<br>
+<img id="cartoon_frac" height="200" width="200">
 <br>
 <h5 id="fracture_info"><b></b></h5>
 
